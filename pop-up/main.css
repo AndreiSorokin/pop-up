@@ -1,0 +1,109 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #000;
+   --menu-text-color: rgb(221, 221, 221);
+}
+
+.container{
+   position: relative;
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+
+.inscriprion{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+}
+
+.inscription-content{
+   position: relative;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: top;
+   width: 60vw;
+   height: 30vh;
+   user-select: none;
+}
+.glow{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   height: 1em;
+   width: 1em;
+   border-radius: 50%;
+   background-color: #3f3f3f;
+   box-shadow: 0 0 6em 5em #4a4a4a;
+}
+.inscriprion-title{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   color: #fff;
+   font-size: 10em;
+}
+.design{
+   margin: -1vw;
+}
+.inscription-subtitle{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   color: gray;
+   font-size: 5em;
+}
+
+.dropdown{
+   position: absolute;
+   top: 3%;
+   left: 2%;
+}
+
+.burger{
+   position: relative;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.burger-line{
+   content: '';
+   height: .7vh;
+   width: 2vw;
+   border-radius: 50px;
+   background-color: rgb(84, 84, 84);
+   margin-bottom: .5vh;
+}
+
+.dropdown-menu{
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   top: 0;
+   left: calc(100% + .6rem);
+   font-size: 1.4rem;
+   border-radius: .25rem;
+   box-shadow: inset 0 0 10px .5px rgb(31, 31, 31);
+   width: 5em;
+   height: 7em;
+   transition-duration: 1s;
+   opacity: 0;
+}
+.dropdown-menu.active{
+   opacity: 1;
+}
+.menu-content{
+   margin: .8rem;
+   color: #fff;
+   text-decoration: none;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   letter-spacing: .1em;
+}
